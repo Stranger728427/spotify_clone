@@ -4,7 +4,7 @@ let songIndex=0;
 let audioElement=new Audio('ganda-gana.mp3');
 let masterPlay=document.getElementById('masterPlay');
 let myProgressBar=document.getElementById('myProgressBar');
-// let gif=document.getElementById('gif');
+
 let songItems=Array.from(document.getElementsByClassName('songItems'));
 let songs=[
     
@@ -27,13 +27,13 @@ masterPlay.addEventListener('click',()=>{
         audioElement.play();
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
-        // gif.style.opacity=1;
+    
     }
     else{
         audioElement.pause();
         masterPlay.classList.remove('fa-pause-circle');
         masterPlay.classList.add('fa-play-circle');
-        // gif.style.opacity=0;
+    
     }
     
 })
